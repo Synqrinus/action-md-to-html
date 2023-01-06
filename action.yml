@@ -1,0 +1,16 @@
+name: 'Markdown2HTML'
+description: 'Takes a Markdown input and converts it to HTML output'
+branding:
+  icon: 'code'
+  color: 'blue'
+inputs:
+  text:
+    description: 'Markdown text'
+    required: true
+    default: ''
+outputs:
+  html:
+    description: 'HTML output'
+runs:
+  using: 'node16'
+  main: 'index.js'
