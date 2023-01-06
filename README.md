@@ -19,7 +19,7 @@ The HTML result
 ```yaml
 - name: Convert markdown text to html
   id: md-to-html
-  uses: Synqrinus/action-md-to-html@v1.4
+  uses: Synqrinus/action-md-to-html@v1.5
   with:
     text: '# Hello there'
 

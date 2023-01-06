@@ -12,6 +12,10 @@ inputs:
     description: 'Html file path'
     required: true
     default: 'index.html'
+  title:
+    description: 'Html title tex'
+    required: true
+    default: 'Document'
 runs:
   using: 'node16'
   main: 'index.js'
