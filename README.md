@@ -16,6 +16,14 @@ The HTML result
 
 ## Example usage
 
-uses: lifepal/markdown-to-html@v1.1
-with:
-  text: 'Hello there'
+```yaml
+- name: Convert markdown text to html
+  id: md-to-html
+  uses: Synqrinus/action-md-to-html@v1.1
+  with:
+    text: '# Hello there'
+
+- name: Use converted html
+  run: |
+    echo ${{ steps.md-to-html.outputs.html }} > index.html
+    cat index.html
