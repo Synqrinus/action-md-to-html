@@ -5,12 +5,13 @@ branding:
   color: 'blue'
 inputs:
   text:
-    description: 'Markdown text'
+    description: 'Markdown text file path'
     required: true
-    default: ''
-outputs:
+    default: 'README.md'
   html:
-    description: 'HTML output'
+    description: 'Html file path'
+    required: true
+    default: 'index.html'
 runs:
   using: 'node16'
   main: 'index.js'
