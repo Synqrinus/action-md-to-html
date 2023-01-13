@@ -16,6 +16,10 @@ inputs:
     description: 'Html title tex'
     required: true
     default: 'Document'
+  style:
+    description: 'Styles file path'
+    required: false
+    default: ''
 runs:
   using: 'node16'
   main: 'index.js'

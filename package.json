@@ -1,6 +1,6 @@
 {
   "name": "markdown-to-html",
-  "version": "1.0.0",
+  "version": "1.6.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -12,6 +12,8 @@
   "dependencies": {
     "@actions/core": "^1.2.4",
     "@actions/github": "^3.0.0",
+    "@node-minify/clean-css": "^7.1.0",
+    "@node-minify/core": "^7.1.0",
     "showdown": "^1.9.1"
   }
 }
