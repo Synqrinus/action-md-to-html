@@ -7,7 +7,9 @@ const fs = require('fs');
 (async () => {
     try {
         const markdownText = fs.readFileSync(core.getInput('text'), 'utf8').toString().trim()
-        const converter = new showdown.Converter();
+        const converter = new showdown.Converter({
+            ghCompatibleHeaderId: true
+        });
         const htmlTitle = core.getInput('title');
         const htmlBody = converter.makeHtml(markdownText);
         const htmlStyle = core.getInput('style') ? await minify({
